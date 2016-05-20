@@ -13,6 +13,8 @@
 		F09E86241CEF4E710039AB98 /* Wishlist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F09E86221CEF4E710039AB98 /* Wishlist.xcdatamodeld */; };
 		F09E86261CEF4E710039AB98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09E86251CEF4E710039AB98 /* Assets.xcassets */; };
 		F09E86291CEF4E710039AB98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09E86271CEF4E710039AB98 /* LaunchScreen.storyboard */; };
+		F09E86321CEF53DA0039AB98 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09E86301CEF53DA0039AB98 /* Product+CoreDataProperties.swift */; };
+		F09E86331CEF53DA0039AB98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09E86311CEF53DA0039AB98 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F09E86251CEF4E710039AB98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F09E86281CEF4E710039AB98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09E862A1CEF4E710039AB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09E86301CEF53DA0039AB98 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Product+CoreDataProperties.swift"; path = "../Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F09E86311CEF53DA0039AB98 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				F09E86271CEF4E710039AB98 /* LaunchScreen.storyboard */,
 				F09E862A1CEF4E710039AB98 /* Info.plist */,
 				F09E86221CEF4E710039AB98 /* Wishlist.xcdatamodeld */,
+				F09E86301CEF53DA0039AB98 /* Product+CoreDataProperties.swift */,
+				F09E86311CEF53DA0039AB98 /* Product.swift */,
 			);
 			path = Wishlist;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				F09E86241CEF4E710039AB98 /* Wishlist.xcdatamodeld in Sources */,
 				F09E861E1CEF4E710039AB98 /* ViewController.swift in Sources */,
+				F09E86331CEF53DA0039AB98 /* Product.swift in Sources */,
+				F09E86321CEF53DA0039AB98 /* Product+CoreDataProperties.swift in Sources */,
 				F09E861C1CEF4E710039AB98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
