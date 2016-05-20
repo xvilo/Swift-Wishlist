@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Wishlist-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wishlist" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,9 +30,12 @@
                             <constraint firstItem="wmt-s3-vli" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="oA3-bx-B6c"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Ess-wD-IgV">
+                    <navigationItem key="navigationItem" title="Wishlist" id="Ess-wD-IgV">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cu8-OE-5KZ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="wmt-s3-vli" id="LwD-o0-BeT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
