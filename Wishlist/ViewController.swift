@@ -7,25 +7,55 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
+    
+    var products : [Product] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        makeSampleProduct()
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let request = NSFetchRequest(entityName: "Product")
+        var results : [AnyObject]?
+        
+        do {
+            results = try context.executeFetchRequest(request)
+        }catch{
+            results = nil
+        }
+        
+        if results != nil{
+            self.products = results as! [Product]
+        }
+    }
+    
+    func makeSampleProduct(){
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let product = NSEntityDescription.insertNewObjectForEntityForName("Product", inManagedObjectContext: context) as! Product
+        product.title = "shoes"
+        
+        do {
+            try context.save()
+        }catch{
+            print("Oh noes, something went wrong")
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.products.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel!.text = "shoes"
+        let product = self.products[indexPath.row]
+        cell.textLabel!.text = product.title
         return cell
     }
 
