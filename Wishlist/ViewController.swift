@@ -40,6 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let product = NSEntityDescription.insertNewObjectForEntityForName("Product", inManagedObjectContext: context) as! Product
         product.title = "shoes"
+        product.image = UIImageJPEGRepresentation(UIImage(named: "CK-Faktum-51-1.jpg")!, 1)
         
         do {
             try context.save()
@@ -56,6 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         let product = self.products[indexPath.row]
         cell.textLabel!.text = product.title
+        cell.imageView?.image = UIImage(data: product.image!)
         return cell
     }
 

@@ -15,6 +15,7 @@
 		F09E86291CEF4E710039AB98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09E86271CEF4E710039AB98 /* LaunchScreen.storyboard */; };
 		F09E86321CEF53DA0039AB98 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09E86301CEF53DA0039AB98 /* Product+CoreDataProperties.swift */; };
 		F09E86331CEF53DA0039AB98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09E86311CEF53DA0039AB98 /* Product.swift */; };
+		F09E86351CEF56EF0039AB98 /* CK-Faktum-51-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F09E86341CEF56EF0039AB98 /* CK-Faktum-51-1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F09E862A1CEF4E710039AB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F09E86301CEF53DA0039AB98 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Product+CoreDataProperties.swift"; path = "../Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F09E86311CEF53DA0039AB98 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../Product.swift; sourceTree = "<group>"; };
+		F09E86341CEF56EF0039AB98 /* CK-Faktum-51-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CK-Faktum-51-1.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		F09E861A1CEF4E710039AB98 /* Wishlist */ = {
 			isa = PBXGroup;
 			children = (
+				F09E86341CEF56EF0039AB98 /* CK-Faktum-51-1.jpg */,
 				F09E861B1CEF4E710039AB98 /* AppDelegate.swift */,
 				F09E861D1CEF4E710039AB98 /* ViewController.swift */,
 				F09E861F1CEF4E710039AB98 /* Main.storyboard */,
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09E86291CEF4E710039AB98 /* LaunchScreen.storyboard in Resources */,
+				F09E86351CEF56EF0039AB98 /* CK-Faktum-51-1.jpg in Resources */,
 				F09E86261CEF4E710039AB98 /* Assets.xcassets in Resources */,
 				F09E86211CEF4E710039AB98 /* Main.storyboard in Resources */,
 			);
